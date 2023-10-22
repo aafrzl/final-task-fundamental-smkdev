@@ -2,6 +2,10 @@
 
 Project ini dibuat untuk memenuhi tugas Frontend Bootcamp dari [SMKDEV]('https://smk.dev/'). Project ini dibuat dengan menggunakan [Next.js]('https://nextjs.org/') dan [Tailwind CSS]('https://tailwindcss.com/'). Project ini adalah sebuah website movie app yang menggunakan API dari [TMDB](https://www.themoviedb.org/).
 
+## Demo
+
+[https://movie-app-task-final-smkdev.vercel.app/](https://movie-app-task-final-smkdev.vercel.app/)
+
 ## Features
 
 - [x] Home Page
