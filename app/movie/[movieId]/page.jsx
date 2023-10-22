@@ -4,11 +4,14 @@ import { useGetMoviesById } from "@/hooks/useMovies";
 import { formatCurrency } from "@/utils/formatCurrency";
 import { formatDate } from "@/utils/formatDate";
 import { useParams } from "next/navigation";
+import NotFound from "../../not-found";
 
 export default function MovieDetailPage() {
   const params = useParams();
   const movieId = params.movieId;
   const movieDetail = useGetMoviesById(movieId);
+
+  if (!movieDetail) return <NotFound />;
 
   return (
     <section className="container mx-auto mt-10">
