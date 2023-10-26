@@ -1,11 +1,7 @@
 import axios from "@/lib/api";
 import CardMovie from "./CardMovie";
 
-export default async function SearchResults({ keyword }) {
-  const response = await axios.get(`/search/movie?query=${keyword}`);
-
-  const movies = await response.data;
-
+export default function SearchResults({ movies, keyword }) {
   return (
     <>
       {movies?.results?.length === 0 && (
