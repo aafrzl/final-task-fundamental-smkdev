@@ -30,7 +30,9 @@ export default function MovieDetailPage() {
         <div className="flex items-start justify-start gap-x-6">
           <p className="text-sm font-bold md:text-base">Release Date</p>
           <p className="text-sm md:text-base">
-            {formatDate(movieDetail.release_date)}
+            {movieDetail.release_date
+              ? formatDate(movieDetail.release_date)
+              : "N/A"}
           </p>
         </div>
         <div className="flex items-start justify-start gap-x-6">

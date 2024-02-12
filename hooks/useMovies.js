@@ -8,11 +8,10 @@ const useGetMovies = (page = 1, genre) => {
 
   useEffect(() => {
     axios
-      .get(`/discover/movie?with_genres=${genre}&page=${page}`)
+      .get(`/discover/movie?page=${page}${genre ? `&with_genres=${genre}` : ""}`)
       .then((res) => setMovies(res.data))
       .catch((err) => console.log(err));
   }, [page, genre]);
-
   return movies;
 };
 

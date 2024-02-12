@@ -22,7 +22,6 @@ export default function CardMovie({
           alt="Movie Image"
           width={500}
           height={500}
-          priority
           className="aspect-[2/3] w-full rounded-md"
           placeholder="blur"
           blurDataURL="https://via.placeholder.com/500x500/374151/FFFFFF?text=Loading..."

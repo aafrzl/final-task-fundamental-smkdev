@@ -35,7 +35,7 @@ export default function FilterCategory() {
   const handleResetGenre = () => {
     let searchParams = new URLSearchParams();
 
-    searchParams.set("genre", null);
+    searchParams.delete("genre");
 
     router.push(`/?${searchParams.toString()}`);
   };
